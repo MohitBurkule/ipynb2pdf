@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ipynb 2 Pdf</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div>
+        <div class="header-dark" style="background-size:auto;background-image:url(&quot;none&quot;);background-color:rgb(23,41,61);padding-bottom:0px;">
+            <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+                <div class="container"><a class="navbar-brand" href="#">Ipynb2pdf</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">About Me</a></li>
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" hidden="">Dropdown </a>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container hero" style="background-color:#0e0e0e;padding-right:0px;padding-left:0px;margin-left:0px;margin-right:0px;max-width:100%;">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h1 class="text-center" style="color:rgb(212,216,220);">The Revolution is Here.</h1>
+            </div>
+        </div>
+    </div>
+    <div class="login-dark" style="background-color:rgb(23,41,61);">
+        <form method="post" style="padding-top:0px;" action="http://ipnyb2pdf.pythonanywhere.com/uploader" enctype="multipart/form-data">
+            <div class="illustration"><i class="icon ion-ios-color-wand-outline"></i></div>
+            <div class="form-group"><label>&nbsp;&nbsp;</label></div>
+            <div class="form-group">
+                <div id="customFile" class="custom-file"><input type="file" class="custom-file-input" accept=".ipynb" name="file"><label class="custom-file-label" for="customFile">Choose Ipynb file</label><script>
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script></div>
+            </div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Get Pdf!</button></div><a href="#" class="forgot">Having issues?</a></form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
